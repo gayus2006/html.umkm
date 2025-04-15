@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodi UMKM - Toko Alat Musik Lokal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        nav ul li a.active-link {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Melodi UMKM</div>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')" class="active-link">Home</a></li>
+                <li><a href="#product" onclick="showPage('product')">Product</a></li>
+                <li><a href="#shop" onclick="showPage('shop')">Shop</a></li>
+                <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#about" onclick="showPage('about')">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active home">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Temukan Harmoni Musik dari UMKM Lokal</h1>
+                    <p>Berbagai pilihan alat musik berkualitas, dibuat dengan cinta dan keahlian pengrajin lokal.</p>
+                    <a href="#product" onclick="showPage('product')" class="cta-button">Lihat Koleksi Alat Musik</a>
+                </div>
+            </div>
+
+            <section class="featured-products">
+                <h2>Alat Musik Unggulan</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="placeholder-gitar.jpg" alt="Gitar Akustik Lokal" style="width: 100%;">
+                        <h3>Gitar Akustik Lokal</h3>
+                        <p>Gitar akustik dengan kualitas suara yang merdu.</p>
+                        <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="placeholder-ukulele.jpg" alt="Ukulele Kayu Handmade" style="width: 100%;">
+                        <h3>Ukulele Kayu Handmade</h3>
+                        <p>Ukulele unik dengan sentuhan seni pengrajin.</p>
+                        <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="placeholder-kendang.jpg" alt="Kendang Tradisional Jawa" style="width: 100%;">
+                        <h3>Kendang Tradisional Jawa</h3>
+                        <p>Kendang berkualitas untuk berbagai jenis musik.</p>
+                        <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="product" class="page product-page">
+            <h1>Katalog Alat Musik UMKM</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="placeholder-biola.jpg" alt="Biola Kayu Solid" style="width: 100%;">
+                    <h3>Biola Kayu Solid</h3>
+                    <p>Biola dengan kualitas suara yang kaya dan mendalam.</p>
+                    <span class="price">Rp 1.500.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+                <div class="product-item">
+                    <img src="placeholder-pianika.jpg" alt="Pianika Melodi Anak" style="width: 100%;">
+                    <h3>Pianika Melodi Anak</h3>
+                    <p>Pianika ceria untuk belajar musik dengan menyenangkan.</p>
+                    <span class="price">Rp 150.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+                <div class="product-item">
+                    <img src="placeholder-drum.jpg" alt="Set Drum Elektrik Pemula" style="width: 100%;">
+                    <h3>Set Drum Elektrik Pemula</h3>
+                    <p>Set drum elektrik lengkap untuk latihan di rumah.</p>
+                    <span class="price">Rp 3.000.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+                <div class="product-item">
+                    <img src="placeholder-seruling.jpg" alt="Seruling Bambu Tradisional" style="width: 100%;">
+                    <h3>Seruling Bambu Tradisional</h3>
+                    <p>Seruling bambu dengan nada yang khas.</p>
+                    <span class="price">Rp 40.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+                <div class="product-item">
+                    <img src="placeholder-rebana.jpg" alt="Rebana Hadroh Ukuran Standar" style="width: 100%;">
+                    <h3>Rebana Hadroh Ukuran Standar</h3>
+                    <p>Rebana berkualitas untuk seni musik Islami.</p>
+                    <span class="price">Rp 120.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+                <div class="product-item">
+                    <img src="placeholder-cajon.jpg" alt="Cajon Akustik Solid" style="width: 100%;">
+                    <h3>Cajon Akustik Solid</h3>
+                    <p>Cajon dengan suara bass yang dalam dan snare responsif.</p>
+                    <span class="price">Rp 350.000</span>
+                    <a href="#shop" onclick="showPage('shop')" class="button">Lihat Detail</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="page shop-page">
+            <h1>Toko Alat Musik Melodi UMKM</h1>
+            <p>Dapatkan alat musik impian Anda dan dukung pengrajin lokal!</p>
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <img src="placeholder-gitar.jpg" alt="Gitar Akustik Lokal" style="width: 80%;">
+                    <h3>Gitar Akustik Lokal</h3>
+                    <span class="price">Rp 800.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-ukulele.jpg" alt="Ukulele Kayu Handmade" style="width: 80%;">
+                    <h3>Ukulele Kayu Handmade</h3>
+                    <span class="price">Rp 250.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-biola.jpg" alt="Biola Kayu Solid" style="width: 80%;">
+                    <h3>Biola Kayu Solid</h3>
+                    <span class="price">Rp 1.500.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-pianika.jpg" alt="Pianika Melodi Anak" style="width: 80%;">
+                    <h3>Pianika Melodi Anak</h3>
+                    <span class="price">Rp 150.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-drum.jpg" alt="Set Drum Elektrik Pemula" style="width: 80%;">
+                    <h3>Set Drum Elektrik Pemula</h3>
+                    <span class="price">Rp 3.000.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-seruling.jpg" alt="Seruling Bambu Tradisional" style="width: 80%;">
+                    <h3>Seruling Bambu Tradisional</h3>
+                    <span class="price">Rp 40.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-rebana.jpg" alt="Rebana Hadroh Ukuran Standar" style="width: 80%;">
+                    <h3>Rebana Hadroh Ukuran Standar</h3>
+                    <span class="price">Rp 120.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="shop-item">
+                    <img src="placeholder-cajon.jpg" alt="Cajon Akustik Solid" style="width: 80%;">
+                    <h3>Cajon Akustik Solid</h3>
+                    <span class="price">Rp 350.000</span>
+                    <button class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page contact-page">
+            <h1>Hubungi Kami</h1>
+            <p>Ada pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi kami!</p>
+
+            <div class="contact-info">
+                <p><strong>Alamat:</strong> Jl. Musik Indah No. 7, Pekanbaru, Riau</p>
+                <p><strong>Email:</strong> melodi@umkm.com</p>
+                <p><strong>Telepon:</strong> (0761) 876543</p>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subjek:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="button">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <section id="about" class="page about-page">
+            <h1>Tentang Melodi UMKM</h1>
+            <p>Melodi UMKM hadir sebagai wadah bagi para pengrajin alat musik lokal untuk memperkenalkan karya-karya mereka kepada Anda. Kami percaya bahwa setiap alat musik memiliki cerita dan jiwa, yang diwariskan melalui tangan-tangan terampil para pengusaha mikro, kecil, dan menengah.</p>
+
+            <h2>Misi Kami</h2>
+            <ul>
+                <li>Mendukung dan mempromosikan produk alat musik UMKM berkualitas.</li>
+                <li>Menyediakan platform yang mudah bagi pecinta musik untuk menemukan alat musik unik dan otentik.</li>
+                <li>Membangun apresiasi terhadap keahlian lokal dan warisan budaya musik Indonesia.</li>
+            </ul>
+
+            <h2>Nilai Kami</h2>
+            <ul>
+                <li><strong>Kualitas:</strong> Kami hanya menawarkan alat musik yang terjamin kualitasnya.</li>
+                <li><strong>Lokal:</strong> Kami bangga mendukung produk-produk buatan Indonesia.</li>
+                <li><strong>Kemitraan:</strong> Kami menjalin hubungan yang baik dengan para pengrajin.</li>
+                <li><strong>Pelayanan:</strong> Kepuasan pelanggan adalah prioritas kami.</li>
+            </ul>
+
+            <p>Terima kasih telah memilih Melodi UMKM sebagai bagian dari perjalanan musik Anda!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Melodi UMKM. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-link');
+            });
+
+            document.getElementById(pageId).classList.add('active');
+            const activeLink = document.querySelector(`nav ul li a[href="#${pageId}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active-link');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('home');
+        });
+    </script>
+</body>
+</html>
